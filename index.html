@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Case Transformer - Convert and Transform Your Text Easily</title>
+
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Text Case Transformer helps you convert and transform your text into various cases like uppercase, lowercase, title case, and more.">
+    <meta name="keywords" content="text transformer, text converter, text case converter, uppercase, lowercase, title case, sentence case, online tool">
+    <meta name="author" content="Your Name">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Text Case Transformer - Convert and Transform Your Text Easily">
+    <meta property="og:description" content="Text Case Transformer helps you convert and transform your text into various cases like uppercase, lowercase, title case, and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:image" content="https://yourdomain.com/og-image.jpg">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Text Case Transformer - Convert and Transform Your Text Easily">
+    <meta name="twitter:description" content="Text Case Transformer helps you convert and transform your text into various cases like uppercase, lowercase, title case, and more.">
+    <meta name="twitter:image" content="https://yourdomain.com/twitter-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://yourdomain.com">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Manifest -->
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://yourdomain.com",
+        "name": "Text Case Transformer",
+        "description": "Text Case Transformer helps you convert and transform your text into various cases like uppercase, lowercase, title case, and more.",
+        "author": {
+            "@type": "Person",
+            "name": "Your Name"
+        },
+        "image": "https://yourdomain.com/og-image.jpg"
+    }
+    </script>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+            .then(function(registration) {
+                console.log('Service Worker registered with scope:', registration.scope);
+            }).catch(function(error) {
+                console.log('Service Worker registration failed:', error);
+            });
+        }
+    </script>
+</head>
+<body class="bg-gray-100 pt-6 pb-12">
+
+    <!-- Main Content -->
+    <main class="flex-1" aria-labelledby="main-heading">
+        <h1 id="main-heading" class="sr-only">Text Case Transformer</h1>
+
+        <section class="sticky-input" id="inputContainer">
+            <div class="wrapper" id="inputWrapper">
+                <div class="mb-6 bg-white p-6 rounded-md shadow-md flex">
+                    <label for="textInput" class="sr-only">Enter your text</label>
+                    <input id="textInput" type="text" placeholder="Enter your text here, where words take flight..." class="w-full p-4 text-xl border border-gray-300 bg-blue-100 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-300" aria-describedby="input-description" />
+                    <button class="px-6 ml-2 rounded-md border border-gray-300 hover:bg-blue-200" aria-label="Clear input" onclick="clearInput()">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6M6 6L18 18" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <p id="input-description" class="sr-only">Enter your text in the input field to see various text case transformations.</p>
+            </div>
+        </section>
+
+        <div class="container mx-auto px-6" id="contentArea" role="region" aria-live="polite"></div>
+    </main>
+
+    <script src="transformations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

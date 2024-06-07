@@ -1,0 +1,39 @@
+.spongebob-case {
+    text-transform: none;
+}
+.output-container {
+    position: relative;
+    word-break: break-all; /* Breaks long words */
+    overflow-wrap: anywhere; /* Breaks text at any point */
+}
+.copy-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.sticky-input {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: width 0.3s ease-in-out, padding 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+.wrapper {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    transition: padding 0.3s ease-in-out;
+}
+.full-width .wrapper {
+    padding: 0 !important;
+}
+.full-width .wrapper > div {
+    border-radius: 0;
+}
+.clear-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
