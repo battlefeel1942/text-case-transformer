@@ -43,7 +43,7 @@ window.addEventListener('scroll', () => {
 });
 
 function updateURLHash(text) {
-    history.pushState(null, '', '#' + encodeURIComponent(text));
+    location.replace('#' + encodeURIComponent(text));
 }
 
 function populateInputFromURL() {
